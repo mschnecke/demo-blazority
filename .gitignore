@@ -353,5 +353,5 @@ MigrationBackup/
 .idea/**/*
 *.sln.iml
 
-user.db
-user.db*
+**/users.db*
+**/users.db
