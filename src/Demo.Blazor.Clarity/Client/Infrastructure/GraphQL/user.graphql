@@ -1,0 +1,38 @@
+﻿query user ($first: Int, $after: String, $last: Int, $before: String, $where: UserFilterInput, $order: [UserSortInput!]) {
+  user (first: $first, after: $after, last: $last, before: $before, where: $where, order: $order) {
+    totalCount
+    pageInfo {
+      hasNextPage
+      hasPreviousPage
+      startCursor
+      endCursor
+    }
+    edges {
+      cursor
+      node {
+        ...UserFragment
+      }
+    }
+  }
+}
+
+mutation createUser ($input: CreateUserInput!) {
+  createUser (input: $input) {
+    user {
+      ...UserFragment
+    }
+  }
+}
+
+mutation deleteUser ($input: DeleteUserInput!) {
+  deleteUser (input: $input) {
+    id
+  }
+}
+
+fragment UserFragment on User {
+  id
+  email
+  firstName
+  lastName
+}

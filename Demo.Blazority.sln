@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.Blazor.Clarity.Server"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.Blazor.Clarity.Client", "src\Demo.Blazor.Clarity\Client\Demo.Blazor.Clarity.Client.csproj", "{BE394862-72C2-4CD9-9806-71672392CEDE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.Blazor.Clarity.Shared", "src\Demo.Blazor.Clarity\Shared\Demo.Blazor.Clarity.Shared.csproj", "{FF3E6C11-123C-4A51-9628-970989FB6EF7}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,9 +24,5 @@ Global
 		{BE394862-72C2-4CD9-9806-71672392CEDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE394862-72C2-4CD9-9806-71672392CEDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BE394862-72C2-4CD9-9806-71672392CEDE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FF3E6C11-123C-4A51-9628-970989FB6EF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FF3E6C11-123C-4A51-9628-970989FB6EF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FF3E6C11-123C-4A51-9628-970989FB6EF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FF3E6C11-123C-4A51-9628-970989FB6EF7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

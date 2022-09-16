@@ -1,13 +1,43 @@
-﻿using Microsoft.AspNetCore.ResponseCompression;
+﻿
+using Demo.Blazor.Clarity.Server.Data;
+using Demo.Blazor.Clarity.Server.Modules.Users;
+using Demo.Blazor.Clarity.Server.Modules.Users.Commands;
+using HotChocolate.Types.Pagination;
+using MediatR;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+                                                    {
+                                                        options.UseSqlite(
+                                                            builder.Configuration.GetConnectionString("Default"),
+                                                            b =>
+                                                            {
+                                                                b.MigrationsAssembly(typeof(ApplicationDbContext)
+                                                                    .Assembly.FullName);
+                                                            });
+                                                    });
 
-builder.Services.AddControllersWithViews();
-builder.Services.AddRazorPages();
+builder.Services.AddHttpContextAccessor();
+builder.Services.AddGraphQLServer()
+    .InitializeOnStartup()
+    .AddQueryType()
+    .AddMutationType()
+    .AddTypeExtension<UserQueries>()
+    .AddTypeExtension<UserMutations>()
+    .AddFiltering()
+    .AddSorting()
+    .AddProjections()
+    .RegisterDbContext<ApplicationDbContext>()
+    .SetPagingOptions(new PagingOptions {IncludeTotalCount = true, MaxPageSize = 50})
+    ;
 
-var app = builder.Build();
+builder.Services.AddMediatR(typeof(CreateUserCommand).Assembly);
+
+var app = builder
+    .Build()
+    .InitializeDatabase();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -28,9 +58,7 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
-
-app.MapRazorPages();
-app.MapControllers();
+app.MapGraphQL();
 app.MapFallbackToFile("index.html");
 
 app.Run();
