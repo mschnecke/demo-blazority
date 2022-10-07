@@ -53,6 +53,7 @@ public partial class Index
 	{
 		if (this.Datagrid != null)
 		{
+			await Task.Yield();
 			await this.Datagrid.RefreshViewItems(true);
 		}
 	}

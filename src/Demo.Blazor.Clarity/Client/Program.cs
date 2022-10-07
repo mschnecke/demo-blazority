@@ -11,7 +11,7 @@ builder.RootComponents.Add<HeadOutlet>("head::after");
 builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
 
 builder.Services
-	.AddBlazorityClient(ExecutionStrategy.CacheAndNetwork)
+	.AddBlazorityClient(ExecutionStrategy.NetworkOnly)
 	.ConfigureHttpClient(x => x.BaseAddress = new Uri($"{builder.HostEnvironment.BaseAddress}graphql"));
 
 builder.Services.AddTransient<IUserService, UserService>();
