@@ -13,7 +13,7 @@ public partial class Index
 
 	private DatagridPagination<IUser_User_Edges>? Paginator = new();
 
-	private Datagrid<IUser_User_Edges>? Datagrid = new();
+	private Datagrid<IUser_User_Edges>? Datagrid { get; set; }
 
 	private IUser_User? connection;
 
@@ -53,7 +53,6 @@ public partial class Index
 	{
 		if (this.Datagrid != null)
 		{
-			await Task.Yield();
 			await this.Datagrid.RefreshViewItems(true);
 		}
 	}
