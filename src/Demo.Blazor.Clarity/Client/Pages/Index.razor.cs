@@ -1,6 +1,13 @@
-﻿namespace Demo.Blazor.Clarity.Client.Pages;
+﻿// ----------------------------------------------------------------------------------------
+//  <copyright file="Index.razor.cs" company="Cortado Holding">
+//     Copyright (c) 2022, Cortado Holding. All rights reserved.
+//  </copyright>
+// ----------------------------------------------------------------------------------------
+
+namespace Demo.Blazor.Clarity.Client.Pages;
 
 using Blazority;
+using Blazority.Shared;
 using Microsoft.AspNetCore.Components;
 
 public partial class Index
@@ -13,11 +20,15 @@ public partial class Index
 
 	private DatagridPagination<IUser_User_Edges>? Paginator = new();
 
-	private Datagrid<IUser_User_Edges>? Datagrid { get; set; }
+	private Datagrid<IUser_User_Edges>? Datagrid { get; set; } = new();
 
 	private IUser_User? connection;
 
 	private PagedQuery<IUser_User_Edges>? currentQuery = new PagedQuery<IUser_User_Edges>();
+
+	private IUser_User_Edges SelectedItem { get; set; }
+
+	private bool DeleteDisabled => this.SelectedItem == null;
 
 	private bool createUserDialogOpen;
 
@@ -78,7 +89,8 @@ public partial class Index
 			queryVariables.Before = this.connection!.PageInfo.StartCursor;
 			queryVariables.Last = Convert.ToInt32(query.Limit);
 		}
-		else if ((query.Skip + 10) * query.Limit >=  this.connection?.TotalCount && this.connection?.TotalCount != 0 && this.connection != null)
+		else if ((query.Skip + 10) * query.Limit >= this.connection?.TotalCount && this.connection?.TotalCount != 0
+		         && this.connection != null)
 		{
 			// last
 			queryVariables.After = null;
@@ -98,7 +110,6 @@ public partial class Index
 
 		// sorting
 		queryVariables.Order = new List<UserSortInput>{new UserSortInput{Email = SortEnumType.Asc}};
-
 
 		this.currentQuery = query;
 

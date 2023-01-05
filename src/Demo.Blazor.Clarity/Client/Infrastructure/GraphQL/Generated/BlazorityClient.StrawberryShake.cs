@@ -3,7 +3,7 @@
 
 namespace Demo.Blazor.Clarity.Client
 {
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.13.2.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.16.0.0")]
     public partial class UserResult : global::System.IEquatable<UserResult>, IUserResult
     {
         public UserResult(global::Demo.Blazor.Clarity.Client.IUser_User? user)
@@ -71,7 +71,7 @@ namespace Demo.Blazor.Clarity.Client
     /// <summary>
     /// A connection to a list of items.
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.13.2.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.16.0.0")]
     public partial class User_User_UserConnection : global::System.IEquatable<User_User_UserConnection>, IUser_User_UserConnection
     {
         public User_User_UserConnection(global::System.Int32 totalCount, global::Demo.Blazor.Clarity.Client.IUser_User_PageInfo pageInfo, global::System.Collections.Generic.IReadOnlyList<global::Demo.Blazor.Clarity.Client.IUser_User_Edges>? edges)
@@ -156,7 +156,7 @@ namespace Demo.Blazor.Clarity.Client
     /// <summary>
     /// Information about pagination in a connection.
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.13.2.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.16.0.0")]
     public partial class User_User_PageInfo_PageInfo : global::System.IEquatable<User_User_PageInfo_PageInfo>, IUser_User_PageInfo_PageInfo
     {
         public User_User_PageInfo_PageInfo(global::System.Boolean hasNextPage, global::System.Boolean hasPreviousPage, global::System.String? startCursor, global::System.String? endCursor)
@@ -252,7 +252,7 @@ namespace Demo.Blazor.Clarity.Client
     /// <summary>
     /// An edge in a connection.
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.13.2.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.16.0.0")]
     public partial class User_User_Edges_UserEdge : global::System.IEquatable<User_User_Edges_UserEdge>, IUser_User_Edges_UserEdge
     {
         public User_User_Edges_UserEdge(global::System.String cursor, global::Demo.Blazor.Clarity.Client.IUser_User_Edges_Node node)
@@ -323,7 +323,7 @@ namespace Demo.Blazor.Clarity.Client
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.13.2.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.16.0.0")]
     public partial class User_User_Edges_Node_User : global::System.IEquatable<User_User_Edges_Node_User>, IUser_User_Edges_Node_User
     {
         public User_User_Edges_Node_User(global::System.Guid id, global::System.String? email, global::System.String? firstName, global::System.String? lastName)
@@ -408,7 +408,7 @@ namespace Demo.Blazor.Clarity.Client
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.13.2.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.16.0.0")]
     public partial interface IUserResult
     {
         public global::Demo.Blazor.Clarity.Client.IUser_User? User { get; }
@@ -417,7 +417,7 @@ namespace Demo.Blazor.Clarity.Client
     /// <summary>
     /// A connection to a list of items.
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.13.2.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.16.0.0")]
     public partial interface IUser_User
     {
         public global::System.Int32 TotalCount { get; }
@@ -436,7 +436,7 @@ namespace Demo.Blazor.Clarity.Client
     /// <summary>
     /// A connection to a list of items.
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.13.2.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.16.0.0")]
     public partial interface IUser_User_UserConnection : IUser_User
     {
     }
@@ -444,7 +444,7 @@ namespace Demo.Blazor.Clarity.Client
     /// <summary>
     /// Information about pagination in a connection.
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.13.2.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.16.0.0")]
     public partial interface IUser_User_PageInfo
     {
         /// <summary>
@@ -471,7 +471,7 @@ namespace Demo.Blazor.Clarity.Client
     /// <summary>
     /// Information about pagination in a connection.
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.13.2.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.16.0.0")]
     public partial interface IUser_User_PageInfo_PageInfo : IUser_User_PageInfo
     {
     }
@@ -479,7 +479,7 @@ namespace Demo.Blazor.Clarity.Client
     /// <summary>
     /// An edge in a connection.
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.13.2.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.16.0.0")]
     public partial interface IUser_User_Edges
     {
         /// <summary>
@@ -496,12 +496,12 @@ namespace Demo.Blazor.Clarity.Client
     /// <summary>
     /// An edge in a connection.
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.13.2.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.16.0.0")]
     public partial interface IUser_User_Edges_UserEdge : IUser_User_Edges
     {
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.13.2.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.16.0.0")]
     public partial interface IUserFragment
     {
         public global::System.Guid Id { get; }
@@ -513,17 +513,17 @@ namespace Demo.Blazor.Clarity.Client
         public global::System.String? LastName { get; }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.13.2.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.16.0.0")]
     public partial interface IUser_User_Edges_Node : IUserFragment
     {
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.13.2.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.16.0.0")]
     public partial interface IUser_User_Edges_Node_User : IUser_User_Edges_Node
     {
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.13.2.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.16.0.0")]
     public partial class CreateUserResult : global::System.IEquatable<CreateUserResult>, ICreateUserResult
     {
         public CreateUserResult(global::Demo.Blazor.Clarity.Client.ICreateUser_CreateUser createUser)
@@ -584,7 +584,7 @@ namespace Demo.Blazor.Clarity.Client
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.13.2.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.16.0.0")]
     public partial class CreateUser_CreateUser_CreateUserPayload : global::System.IEquatable<CreateUser_CreateUser_CreateUserPayload>, ICreateUser_CreateUser_CreateUserPayload
     {
         public CreateUser_CreateUser_CreateUserPayload(global::Demo.Blazor.Clarity.Client.ICreateUser_CreateUser_User? user)
@@ -649,7 +649,7 @@ namespace Demo.Blazor.Clarity.Client
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.13.2.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.16.0.0")]
     public partial class CreateUser_CreateUser_User_User : global::System.IEquatable<CreateUser_CreateUser_User_User>, ICreateUser_CreateUser_User_User
     {
         public CreateUser_CreateUser_User_User(global::System.Guid id, global::System.String? email, global::System.String? firstName, global::System.String? lastName)
@@ -734,34 +734,34 @@ namespace Demo.Blazor.Clarity.Client
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.13.2.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.16.0.0")]
     public partial interface ICreateUserResult
     {
         public global::Demo.Blazor.Clarity.Client.ICreateUser_CreateUser CreateUser { get; }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.13.2.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.16.0.0")]
     public partial interface ICreateUser_CreateUser
     {
         public global::Demo.Blazor.Clarity.Client.ICreateUser_CreateUser_User? User { get; }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.13.2.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.16.0.0")]
     public partial interface ICreateUser_CreateUser_CreateUserPayload : ICreateUser_CreateUser
     {
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.13.2.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.16.0.0")]
     public partial interface ICreateUser_CreateUser_User : IUserFragment
     {
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.13.2.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.16.0.0")]
     public partial interface ICreateUser_CreateUser_User_User : ICreateUser_CreateUser_User
     {
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.13.2.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.16.0.0")]
     public partial class DeleteUserResult : global::System.IEquatable<DeleteUserResult>, IDeleteUserResult
     {
         public DeleteUserResult(global::Demo.Blazor.Clarity.Client.IDeleteUser_DeleteUser deleteUser)
@@ -822,7 +822,7 @@ namespace Demo.Blazor.Clarity.Client
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.13.2.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.16.0.0")]
     public partial class DeleteUser_DeleteUser_DeleteUserPayload : global::System.IEquatable<DeleteUser_DeleteUser_DeleteUserPayload>, IDeleteUser_DeleteUser_DeleteUserPayload
     {
         public DeleteUser_DeleteUser_DeleteUserPayload(global::System.Guid id)
@@ -883,24 +883,24 @@ namespace Demo.Blazor.Clarity.Client
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.13.2.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.16.0.0")]
     public partial interface IDeleteUserResult
     {
         public global::Demo.Blazor.Clarity.Client.IDeleteUser_DeleteUser DeleteUser { get; }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.13.2.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.16.0.0")]
     public partial interface IDeleteUser_DeleteUser
     {
         public global::System.Guid Id { get; }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.13.2.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.16.0.0")]
     public partial interface IDeleteUser_DeleteUser_DeleteUserPayload : IDeleteUser_DeleteUser
     {
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.13.2.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.16.0.0")]
     public partial class UserFilterInputInputValueFormatter : global::StrawberryShake.Serialization.IInputObjectFormatter
     {
         private global::StrawberryShake.Serialization.IInputValueFormatter _userFilterInputFormatter = default !;
@@ -1057,7 +1057,7 @@ namespace Demo.Blazor.Clarity.Client
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.13.2.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.16.0.0")]
     public partial class UserFilterInput : global::Demo.Blazor.Clarity.Client.State.IUserFilterInputInfo, global::System.IEquatable<UserFilterInput>
     {
         public override global::System.Boolean Equals(global::System.Object? obj)
@@ -1225,7 +1225,7 @@ namespace Demo.Blazor.Clarity.Client
         global::System.Boolean global::Demo.Blazor.Clarity.Client.State.IUserFilterInputInfo.IsLastNameSet => _set_lastName;
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.13.2.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.16.0.0")]
     public partial class ComparableGuidOperationFilterInputInputValueFormatter : global::StrawberryShake.Serialization.IInputObjectFormatter
     {
         private global::StrawberryShake.Serialization.IInputValueFormatter _uUIDFormatter = default !;
@@ -1470,7 +1470,7 @@ namespace Demo.Blazor.Clarity.Client
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.13.2.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.16.0.0")]
     public partial class ComparableGuidOperationFilterInput : global::Demo.Blazor.Clarity.Client.State.IComparableGuidOperationFilterInputInfo, global::System.IEquatable<ComparableGuidOperationFilterInput>
     {
         public override global::System.Boolean Equals(global::System.Object? obj)
@@ -1746,7 +1746,7 @@ namespace Demo.Blazor.Clarity.Client
         global::System.Boolean global::Demo.Blazor.Clarity.Client.State.IComparableGuidOperationFilterInputInfo.IsNlteSet => _set_nlte;
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.13.2.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.16.0.0")]
     public partial class StringOperationFilterInputInputValueFormatter : global::StrawberryShake.Serialization.IInputObjectFormatter
     {
         private global::StrawberryShake.Serialization.IInputValueFormatter _stringOperationFilterInputFormatter = default !;
@@ -2029,7 +2029,7 @@ namespace Demo.Blazor.Clarity.Client
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.13.2.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.16.0.0")]
     public partial class StringOperationFilterInput : global::Demo.Blazor.Clarity.Client.State.IStringOperationFilterInputInfo, global::System.IEquatable<StringOperationFilterInput>
     {
         public override global::System.Boolean Equals(global::System.Object? obj)
@@ -2317,7 +2317,7 @@ namespace Demo.Blazor.Clarity.Client
         global::System.Boolean global::Demo.Blazor.Clarity.Client.State.IStringOperationFilterInputInfo.IsNendsWithSet => _set_nendsWith;
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.13.2.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.16.0.0")]
     public partial class UserSortInputInputValueFormatter : global::StrawberryShake.Serialization.IInputObjectFormatter
     {
         private global::StrawberryShake.Serialization.IInputValueFormatter _sortEnumTypeFormatter = default !;
@@ -2414,7 +2414,7 @@ namespace Demo.Blazor.Clarity.Client
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.13.2.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.16.0.0")]
     public partial class UserSortInput : global::Demo.Blazor.Clarity.Client.State.IUserSortInputInfo, global::System.IEquatable<UserSortInput>
     {
         public override global::System.Boolean Equals(global::System.Object? obj)
@@ -2540,7 +2540,7 @@ namespace Demo.Blazor.Clarity.Client
         global::System.Boolean global::Demo.Blazor.Clarity.Client.State.IUserSortInputInfo.IsLastNameSet => _set_lastName;
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.13.2.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.16.0.0")]
     public partial class CreateUserInputInputValueFormatter : global::StrawberryShake.Serialization.IInputObjectFormatter
     {
         private global::StrawberryShake.Serialization.IInputValueFormatter _stringFormatter = default !;
@@ -2618,7 +2618,7 @@ namespace Demo.Blazor.Clarity.Client
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.13.2.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.16.0.0")]
     public partial class CreateUserInput : global::Demo.Blazor.Clarity.Client.State.ICreateUserInputInfo, global::System.IEquatable<CreateUserInput>
     {
         public override global::System.Boolean Equals(global::System.Object? obj)
@@ -2722,7 +2722,7 @@ namespace Demo.Blazor.Clarity.Client
         global::System.Boolean global::Demo.Blazor.Clarity.Client.State.ICreateUserInputInfo.IsLastNameSet => _set_lastName;
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.13.2.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.16.0.0")]
     public partial class DeleteUserInputInputValueFormatter : global::StrawberryShake.Serialization.IInputObjectFormatter
     {
         private global::StrawberryShake.Serialization.IInputValueFormatter _uUIDFormatter = default !;
@@ -2761,7 +2761,7 @@ namespace Demo.Blazor.Clarity.Client
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.13.2.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.16.0.0")]
     public partial class DeleteUserInput : global::Demo.Blazor.Clarity.Client.State.IDeleteUserInputInfo, global::System.IEquatable<DeleteUserInput>
     {
         public override global::System.Boolean Equals(global::System.Object? obj)
@@ -2829,14 +2829,14 @@ namespace Demo.Blazor.Clarity.Client
         global::System.Boolean global::Demo.Blazor.Clarity.Client.State.IDeleteUserInputInfo.IsIdSet => _set_id;
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.13.2.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.16.0.0")]
     public enum SortEnumType
     {
         Asc,
         Desc
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.13.2.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.16.0.0")]
     public partial class SortEnumTypeSerializer : global::StrawberryShake.Serialization.IInputValueFormatter, global::StrawberryShake.Serialization.ILeafValueParser<global::System.String, SortEnumType>
     {
         public global::System.String TypeName => "SortEnumType";
@@ -2892,7 +2892,7 @@ namespace Demo.Blazor.Clarity.Client
     /// }
     /// </code>
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.13.2.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.16.0.0")]
     public partial class UserQueryDocument : global::StrawberryShake.IDocument
     {
         private UserQueryDocument()
@@ -2946,7 +2946,7 @@ namespace Demo.Blazor.Clarity.Client
     /// }
     /// </code>
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.13.2.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.16.0.0")]
     public partial class UserQuery : global::Demo.Blazor.Clarity.Client.IUserQuery
     {
         private readonly global::StrawberryShake.IOperationExecutor<IUserResult> _operationExecutor;
@@ -3115,7 +3115,7 @@ namespace Demo.Blazor.Clarity.Client
     /// }
     /// </code>
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.13.2.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.16.0.0")]
     public partial interface IUserQuery : global::StrawberryShake.IOperationRequestFactory
     {
         global::System.Threading.Tasks.Task<global::StrawberryShake.IOperationResult<IUserResult>> ExecuteAsync(global::System.Int32? first, global::System.String? after, global::System.Int32? last, global::System.String? before, global::Demo.Blazor.Clarity.Client.UserFilterInput? @where, global::System.Collections.Generic.IReadOnlyList<global::Demo.Blazor.Clarity.Client.UserSortInput>? order, global::System.Threading.CancellationToken cancellationToken = default);
@@ -3143,7 +3143,7 @@ namespace Demo.Blazor.Clarity.Client
     /// }
     /// </code>
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.13.2.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.16.0.0")]
     public partial class CreateUserMutationDocument : global::StrawberryShake.IDocument
     {
         private CreateUserMutationDocument()
@@ -3185,7 +3185,7 @@ namespace Demo.Blazor.Clarity.Client
     /// }
     /// </code>
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.13.2.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.16.0.0")]
     public partial class CreateUserMutation : global::Demo.Blazor.Clarity.Client.ICreateUserMutation
     {
         private readonly global::StrawberryShake.IOperationExecutor<ICreateUserResult> _operationExecutor;
@@ -3258,7 +3258,7 @@ namespace Demo.Blazor.Clarity.Client
     /// }
     /// </code>
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.13.2.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.16.0.0")]
     public partial interface ICreateUserMutation : global::StrawberryShake.IOperationRequestFactory
     {
         global::System.Threading.Tasks.Task<global::StrawberryShake.IOperationResult<ICreateUserResult>> ExecuteAsync(global::Demo.Blazor.Clarity.Client.CreateUserInput input, global::System.Threading.CancellationToken cancellationToken = default);
@@ -3276,7 +3276,7 @@ namespace Demo.Blazor.Clarity.Client
     /// }
     /// </code>
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.13.2.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.16.0.0")]
     public partial class DeleteUserMutationDocument : global::StrawberryShake.IDocument
     {
         private DeleteUserMutationDocument()
@@ -3308,7 +3308,7 @@ namespace Demo.Blazor.Clarity.Client
     /// }
     /// </code>
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.13.2.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.16.0.0")]
     public partial class DeleteUserMutation : global::Demo.Blazor.Clarity.Client.IDeleteUserMutation
     {
         private readonly global::StrawberryShake.IOperationExecutor<IDeleteUserResult> _operationExecutor;
@@ -3371,7 +3371,7 @@ namespace Demo.Blazor.Clarity.Client
     /// }
     /// </code>
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.13.2.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.16.0.0")]
     public partial interface IDeleteUserMutation : global::StrawberryShake.IOperationRequestFactory
     {
         global::System.Threading.Tasks.Task<global::StrawberryShake.IOperationResult<IDeleteUserResult>> ExecuteAsync(global::Demo.Blazor.Clarity.Client.DeleteUserInput input, global::System.Threading.CancellationToken cancellationToken = default);
@@ -3381,7 +3381,7 @@ namespace Demo.Blazor.Clarity.Client
     /// <summary>
     /// Represents the BlazorityClient GraphQL client
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.13.2.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.16.0.0")]
     public partial class BlazorityClient : global::Demo.Blazor.Clarity.Client.IBlazorityClient
     {
         private readonly global::Demo.Blazor.Clarity.Client.IUserQuery _user;
@@ -3403,7 +3403,7 @@ namespace Demo.Blazor.Clarity.Client
     /// <summary>
     /// Represents the BlazorityClient GraphQL client
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.13.2.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.16.0.0")]
     public partial interface IBlazorityClient
     {
         global::Demo.Blazor.Clarity.Client.IUserQuery User { get; }
@@ -3416,7 +3416,7 @@ namespace Demo.Blazor.Clarity.Client
 
 namespace Demo.Blazor.Clarity.Client.State
 {
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.13.2.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.16.0.0")]
     public partial class UserResultFactory : global::StrawberryShake.IOperationResultDataFactory<global::Demo.Blazor.Clarity.Client.UserResult>
     {
         public UserResultFactory()
@@ -3521,7 +3521,7 @@ namespace Demo.Blazor.Clarity.Client.State
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.13.2.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.16.0.0")]
     public partial class UserResultInfo : global::StrawberryShake.IOperationResultDataInfo
     {
         public UserResultInfo(global::Demo.Blazor.Clarity.Client.State.UserConnectionData? user)
@@ -3539,7 +3539,7 @@ namespace Demo.Blazor.Clarity.Client.State
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.13.2.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.16.0.0")]
     public partial class CreateUserResultFactory : global::StrawberryShake.IOperationResultDataFactory<global::Demo.Blazor.Clarity.Client.CreateUserResult>
     {
         public CreateUserResultFactory()
@@ -3598,7 +3598,7 @@ namespace Demo.Blazor.Clarity.Client.State
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.13.2.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.16.0.0")]
     public partial class CreateUserResultInfo : global::StrawberryShake.IOperationResultDataInfo
     {
         public CreateUserResultInfo(global::Demo.Blazor.Clarity.Client.State.CreateUserPayloadData createUser)
@@ -3616,7 +3616,7 @@ namespace Demo.Blazor.Clarity.Client.State
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.13.2.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.16.0.0")]
     public partial class DeleteUserResultFactory : global::StrawberryShake.IOperationResultDataFactory<global::Demo.Blazor.Clarity.Client.DeleteUserResult>
     {
         public DeleteUserResultFactory()
@@ -3655,7 +3655,7 @@ namespace Demo.Blazor.Clarity.Client.State
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.13.2.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.16.0.0")]
     public partial class DeleteUserResultInfo : global::StrawberryShake.IOperationResultDataInfo
     {
         public DeleteUserResultInfo(global::Demo.Blazor.Clarity.Client.State.DeleteUserPayloadData deleteUser)
@@ -3673,7 +3673,7 @@ namespace Demo.Blazor.Clarity.Client.State
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.13.2.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.16.0.0")]
     internal interface IUserFilterInputInfo
     {
         global::System.Boolean IsAndSet { get; }
@@ -3689,7 +3689,7 @@ namespace Demo.Blazor.Clarity.Client.State
         global::System.Boolean IsLastNameSet { get; }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.13.2.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.16.0.0")]
     internal interface IComparableGuidOperationFilterInputInfo
     {
         global::System.Boolean IsEqSet { get; }
@@ -3717,7 +3717,7 @@ namespace Demo.Blazor.Clarity.Client.State
         global::System.Boolean IsNlteSet { get; }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.13.2.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.16.0.0")]
     internal interface IStringOperationFilterInputInfo
     {
         global::System.Boolean IsAndSet { get; }
@@ -3745,7 +3745,7 @@ namespace Demo.Blazor.Clarity.Client.State
         global::System.Boolean IsNendsWithSet { get; }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.13.2.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.16.0.0")]
     internal interface IUserSortInputInfo
     {
         global::System.Boolean IsIdSet { get; }
@@ -3757,7 +3757,7 @@ namespace Demo.Blazor.Clarity.Client.State
         global::System.Boolean IsLastNameSet { get; }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.13.2.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.16.0.0")]
     internal interface ICreateUserInputInfo
     {
         global::System.Boolean IsEmailSet { get; }
@@ -3767,13 +3767,13 @@ namespace Demo.Blazor.Clarity.Client.State
         global::System.Boolean IsLastNameSet { get; }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.13.2.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.16.0.0")]
     internal interface IDeleteUserInputInfo
     {
         global::System.Boolean IsIdSet { get; }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.13.2.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.16.0.0")]
     public partial class UserBuilder : global::StrawberryShake.IOperationResultBuilder<global::System.Text.Json.JsonDocument, global::Demo.Blazor.Clarity.Client.IUserResult>
     {
         private readonly global::StrawberryShake.IOperationResultDataFactory<global::Demo.Blazor.Clarity.Client.IUserResult> _resultDataFactory;
@@ -3970,7 +3970,7 @@ namespace Demo.Blazor.Clarity.Client.State
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.13.2.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.16.0.0")]
     public partial class CreateUserBuilder : global::StrawberryShake.IOperationResultBuilder<global::System.Text.Json.JsonDocument, global::Demo.Blazor.Clarity.Client.ICreateUserResult>
     {
         private readonly global::StrawberryShake.IOperationResultDataFactory<global::Demo.Blazor.Clarity.Client.ICreateUserResult> _resultDataFactory;
@@ -4083,7 +4083,7 @@ namespace Demo.Blazor.Clarity.Client.State
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.13.2.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.16.0.0")]
     public partial class DeleteUserBuilder : global::StrawberryShake.IOperationResultBuilder<global::System.Text.Json.JsonDocument, global::Demo.Blazor.Clarity.Client.IDeleteUserResult>
     {
         private readonly global::StrawberryShake.IOperationResultDataFactory<global::Demo.Blazor.Clarity.Client.IDeleteUserResult> _resultDataFactory;
@@ -4169,7 +4169,7 @@ namespace Demo.Blazor.Clarity.Client.State
     }
 
     ///<summary>A connection to a list of items.</summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.13.2.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.16.0.0")]
     public partial class UserConnectionData
     {
         public UserConnectionData(global::System.String __typename, global::System.Int32? totalCount = default !, global::Demo.Blazor.Clarity.Client.State.PageInfoData? pageInfo = default !, global::System.Collections.Generic.IReadOnlyList<global::Demo.Blazor.Clarity.Client.State.UserEdgeData>? edges = default !)
@@ -4192,7 +4192,7 @@ namespace Demo.Blazor.Clarity.Client.State
     }
 
     ///<summary>Information about pagination in a connection.</summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.13.2.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.16.0.0")]
     public partial class PageInfoData
     {
         public PageInfoData(global::System.String __typename, global::System.Boolean? hasNextPage = default !, global::System.Boolean? hasPreviousPage = default !, global::System.String? startCursor = default !, global::System.String? endCursor = default !)
@@ -4220,7 +4220,7 @@ namespace Demo.Blazor.Clarity.Client.State
     }
 
     ///<summary>An edge in a connection.</summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.13.2.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.16.0.0")]
     public partial class UserEdgeData
     {
         public UserEdgeData(global::System.String __typename, global::System.String? cursor = default !, global::Demo.Blazor.Clarity.Client.State.UserData? node = default !)
@@ -4239,7 +4239,7 @@ namespace Demo.Blazor.Clarity.Client.State
         public global::Demo.Blazor.Clarity.Client.State.UserData? Node { get; }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.13.2.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.16.0.0")]
     public partial class UserData
     {
         public UserData(global::System.String __typename, global::System.Guid? id = default !, global::System.String? email = default !, global::System.String? firstName = default !, global::System.String? lastName = default !)
@@ -4262,7 +4262,7 @@ namespace Demo.Blazor.Clarity.Client.State
         public global::System.String? LastName { get; }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.13.2.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.16.0.0")]
     public partial class CreateUserPayloadData
     {
         public CreateUserPayloadData(global::System.String __typename, global::Demo.Blazor.Clarity.Client.State.UserData? user = default !)
@@ -4276,7 +4276,7 @@ namespace Demo.Blazor.Clarity.Client.State
         public global::Demo.Blazor.Clarity.Client.State.UserData? User { get; }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.13.2.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.16.0.0")]
     public partial class DeleteUserPayloadData
     {
         public DeleteUserPayloadData(global::System.String __typename, global::System.Guid? id = default !)
@@ -4290,7 +4290,7 @@ namespace Demo.Blazor.Clarity.Client.State
         public global::System.Guid? Id { get; }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.13.2.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.16.0.0")]
     public partial class BlazorityClientStoreAccessor : global::StrawberryShake.IStoreAccessor
     {
         public global::StrawberryShake.IOperationStore OperationStore => throw new global::System.NotSupportedException("OperationStore is not supported in store less mode");
@@ -4310,7 +4310,7 @@ namespace Demo.Blazor.Clarity.Client.State
 
 namespace Microsoft.Extensions.DependencyInjection
 {
-    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.13.2.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "12.16.0.0")]
     public static partial class BlazorityClientServiceCollectionExtensions
     {
         public static global::StrawberryShake.IClientBuilder<global::Demo.Blazor.Clarity.Client.State.BlazorityClientStoreAccessor> AddBlazorityClient(this global::Microsoft.Extensions.DependencyInjection.IServiceCollection services, global::StrawberryShake.ExecutionStrategy strategy = global::StrawberryShake.ExecutionStrategy.NetworkOnly)
