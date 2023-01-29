@@ -11,11 +11,11 @@
   </PropertyGroup>
   
   <ItemGroup>
-    <PackageReference Include="Blazority" Version="1.0.0" />
+    <PackageReference Include="Blazority" Version="1.1.0" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="6.0.9" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="6.0.9" PrivateAssets="all" />
-    <PackageReference Include="StrawberryShake.CodeGeneration.CSharp.Analyzers" Version="12.13.2" />
-    <PackageReference Include="StrawberryShake.Transport.Http" Version="12.13.2" />
+    <PackageReference Include="StrawberryShake.CodeGeneration.CSharp.Analyzers" Version="12.16.0" />
+    <PackageReference Include="StrawberryShake.Transport.Http" Version="12.16.0" />
   </ItemGroup>
   
   <ItemGroup>
