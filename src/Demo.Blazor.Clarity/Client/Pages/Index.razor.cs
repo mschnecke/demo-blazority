@@ -13,9 +13,10 @@ public partial class Index
 
 	private DatagridPagination<IUser_User_Edges>? Paginator = new();
 
-	private Datagrid<IUser_User_Edges>? Datagrid = new();
+	private Datagrid<IUser_User_Edges>? datagrid = new();
 
-	private IUser_User? connection;
+	private IUser_User? connection = 
+		new User_User_UserConnection(0, new User_User_PageInfo_PageInfo(false, false, null, null), null);
 
 	private PagedQuery<IUser_User_Edges>? currentQuery = new PagedQuery<IUser_User_Edges>();
 
@@ -25,16 +26,16 @@ public partial class Index
 
 	private async Task OnCreateUserOpen()
 	{
-		await Task.Yield();
 		this.createUserModel = new();
 		this.createUserDialogOpen = true;
+		await Task.CompletedTask;
 	}
 
 	private async Task OnCreateUserCancel()
 	{
-		await Task.Yield();
 		this.createUserModel = new();
 		this.createUserDialogOpen = false;
+		await Task.CompletedTask;
 	}
 
 	private async Task OnCreateUserSubmit()
@@ -49,15 +50,15 @@ public partial class Index
 		await this.ReloadItems();
 	}
 
-	public async Task ReloadItems()
+	private async Task ReloadItems()
 	{
-		if (this.Datagrid != null)
+		if (this.datagrid != null)
 		{
-			await this.Datagrid.RefreshViewItems(true);
+			await this.datagrid.RefreshViewItems(true);
 		}
 	}
 
-	public async Task<PagedResult<IUser_User_Edges>> QueryItems(PagedQuery<IUser_User_Edges> query)
+	private async Task<PagedResult<IUser_User_Edges>> QueryItems(PagedQuery<IUser_User_Edges> query)
 	{
 		var queryVariables = new UserQueryVariables();
 

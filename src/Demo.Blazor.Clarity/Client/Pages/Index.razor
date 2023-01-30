@@ -1,17 +1,30 @@
 ﻿@page "/"
 
 <ButtonGroup Variant="Primary" Small="true">
-  <Button OnClick="OnCreateUserOpen">Add</Button>
-  <Button>Delete</Button>
+    <Button OnClick="OnCreateUserOpen">Add</Button>
+    <Button>Delete</Button>
 </ButtonGroup>
 
-<Datagrid TRowData="IUser_User_Edges" QueryBy="QueryItems">
-    <DatagridColumn Title="Email" Name="email" TRowData="IUser_User_Edges" Field="c => c.Node.Email" CanSort="true" CanFilter="true" />
-    <DatagridColumn Title="First Name" Name="firstName" TRowData="IUser_User_Edges" Field="c => c.Node.FirstName" CanSort="true" CanFilter="true" />
-    <DatagridColumn Title="Last Name" Name="lastName" TRowData="IUser_User_Edges" Field="c => c.Node.LastName" CanSort="true" CanFilter="true" />
+<Datagrid @ref="datagrid" TRowData="IUser_User_Edges" QueryBy="QueryItems">
+    <DatagridColumn Title="Email" Name="email" TRowData="IUser_User_Edges" Field="c => c.Node.Email" CanSort="true" CanFilter="true"/>
+    <DatagridColumn Title="First Name" Name="firstName" TRowData="IUser_User_Edges" Field="c => c.Node.FirstName" CanSort="true" CanFilter="true"/>
+    <DatagridColumn Title="Last Name" Name="lastName" TRowData="IUser_User_Edges" Field="c => c.Node.LastName" CanSort="true" CanFilter="true"/>
 
-  <DatagridFooter TRowData="IUser_User_Edges">
-    <DatagridPagination @ref="Paginator" TRowData="IUser_User_Edges" PageSize="10" PageSizes="new int[] { 10, 20, 30 }" PageSizeLabel="Items per page">
+    <DatagridRowActions TRowData="IUser_User_Edges">
+        <DatagridRowActionItem>
+            <span>
+                Edit
+            </span>
+        </DatagridRowActionItem>
+        <DatagridRowActionItem>
+            <span>
+                Delete
+            </span>
+        </DatagridRowActionItem>
+    </DatagridRowActions>
+    
+    <DatagridFooter TRowData="IUser_User_Edges">
+        <DatagridPagination @ref="Paginator" TRowData="IUser_User_Edges" PageSize="10" PageSizes="new[]{10, 20, 30}" PageSizeLabel="Items per page">
             @(Paginator.Pager.StartIndex + 1) - @(Paginator.Pager.EndIndex + 1) of @(Paginator.Pager.ItemCount) users
         </DatagridPagination>
     </DatagridFooter>
@@ -19,16 +32,16 @@
 
 
 <Modal Open="@createUserDialogOpen">
-  <ModalTitle>Create User</ModalTitle>
-  <ModalBody>
-    <Form Model="@createUserModel" Layout="FormLayout.Vertical">
-      <Text HelpText="Email" @bind-Value="createUserModel.Email"></Text>
-      <Text HelpText="First Name" @bind-Value="createUserModel.FirstName"></Text>
-      <Text HelpText="Last Name" @bind-Value="createUserModel.LastName"></Text>
-    </Form>
-  </ModalBody>
-  <ModalFooter>
-    <Button Variant="Primary" OnClick="OnCreateUserSubmit">Ok</Button>
-    <Button Variant="Outline" OnClick="OnCreateUserCancel">Cancel</Button>
-  </ModalFooter>
+    <ModalTitle>Create User</ModalTitle>
+    <ModalBody>
+        <Form Model="@createUserModel" Layout="FormLayout.Vertical">
+            <Text HelpText="Email" @bind-Value="createUserModel.Email"></Text>
+            <Text HelpText="First Name" @bind-Value="createUserModel.FirstName"></Text>
+            <Text HelpText="Last Name" @bind-Value="createUserModel.LastName"></Text>
+        </Form>
+    </ModalBody>
+    <ModalFooter>
+        <Button Variant="Primary" OnClick="OnCreateUserSubmit">Ok</Button>
+        <Button Variant="Outline" OnClick="OnCreateUserCancel">Cancel</Button>
+    </ModalFooter>
 </Modal>
