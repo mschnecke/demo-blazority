@@ -1,7 +1,15 @@
-﻿namespace Demo.Blazor.Clarity.Client.Pages;
+﻿// ----------------------------------------------------------------------------------------
+//  <copyright file="Index.razor.cs" company="Cortado Holding">
+//     Copyright (c) 2023, Cortado Holding. All rights reserved.
+//  </copyright>
+// ----------------------------------------------------------------------------------------
 
+namespace Demo.Blazor.Clarity.Client.Pages;
+
+using System.Runtime.CompilerServices;
 using Blazority;
 using Microsoft.AspNetCore.Components;
+using Microsoft.AspNetCore.Components.Forms;
 
 public partial class Index
 {
@@ -15,14 +23,25 @@ public partial class Index
 
 	private Datagrid<IUser_User_Edges>? datagrid = new();
 
-	private IUser_User? connection = 
+	private IUser_User? connection =
 		new User_User_UserConnection(0, new User_User_PageInfo_PageInfo(false, false, null, null), null);
 
 	private PagedQuery<IUser_User_Edges>? currentQuery = new PagedQuery<IUser_User_Edges>();
 
 	private bool createUserDialogOpen;
 
+	private bool deleteUserDialogOpen;
+
 	private CreateUserModel createUserModel = new();
+	
+	private DeleteUserModel deleteUserModel = new();
+
+	private IUser_User_Edges? selectedUser;
+
+	public async Task OnImportAsync(InputFileChangeEventArgs e)
+	{
+		await Task.CompletedTask;
+	}
 
 	private async Task OnCreateUserOpen()
 	{
@@ -46,6 +65,37 @@ public partial class Index
 			this.createUserModel.Email,
 			this.createUserModel.FirstName,
 			this.createUserModel.LastName);
+
+		await this.ReloadItems();
+	}
+
+	private async Task OnDeleteUserOpen()
+	{
+		if (this.selectedUser == null)
+		{
+			return;
+		}
+		
+		this.deleteUserModel = new();
+		this.deleteUserModel.Id = this.selectedUser.Node.Id;
+		this.deleteUserModel.Email = this.selectedUser.Node.Email;
+		this.deleteUserDialogOpen = true;
+		await Task.CompletedTask;
+	}
+
+	private async Task OnDeleteUserCancel()
+	{
+		this.deleteUserModel = new();
+		this.deleteUserDialogOpen = false;
+		await Task.CompletedTask;
+	}
+
+	private async Task OnDeleteUserSubmit()
+	{
+		this.deleteUserDialogOpen = false;
+
+		await this.UserService
+			.DeleteUserAsync(this.deleteUserModel.Id);
 
 		await this.ReloadItems();
 	}
@@ -79,7 +129,8 @@ public partial class Index
 			queryVariables.Before = this.connection!.PageInfo.StartCursor;
 			queryVariables.Last = Convert.ToInt32(query.Limit);
 		}
-		else if ((query.Skip + 10) * query.Limit >=  this.connection?.TotalCount && this.connection?.TotalCount != 0 && this.connection != null)
+		else if ((query.Skip + 10) * query.Limit >= this.connection?.TotalCount && this.connection?.TotalCount != 0
+		         && this.connection != null)
 		{
 			// last
 			queryVariables.After = null;
@@ -99,7 +150,6 @@ public partial class Index
 
 		// sorting
 		queryVariables.Order = new List<UserSortInput>{new UserSortInput{Email = SortEnumType.Asc}};
-
 
 		this.currentQuery = query;
 
@@ -121,4 +171,11 @@ public class CreateUserModel
 	public string? FirstName { get; set; } = string.Empty;
 
 	public string? LastName { get; set; } = string.Empty;
+}
+
+public class DeleteUserModel
+{
+	public Guid Id { get; set; }
+
+	public string? Email { get; set; }
 }
