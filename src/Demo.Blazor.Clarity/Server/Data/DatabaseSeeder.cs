@@ -20,7 +20,7 @@ public static class DatabaseSeeder
 			if (dbContext.Users.Any() == false)
 			{
 				Randomizer.Seed = new Random(8675309);
-				var count = Random.Shared.Next(25, 230);
+				var count = Random.Shared.Next(20, 25);
 
 				for (var i = 0; i < count; i++)
 				{
